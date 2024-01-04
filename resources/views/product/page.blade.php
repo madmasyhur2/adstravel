@@ -79,7 +79,7 @@
                             <a href="/product/{{ $travel->id }}">
                                 <button type="button"
                                     class="flex py-3 pl-6 pr-4 justify-center items-center gap-2 bg-blue-600 rounded-lg">
-                                    <h3 class="text-base font-sans font-semibold text-white">Book Now!</h3>
+                                    <h3 class="text-base font-sans font-semibold text-white">Book</h3>
                                     <img src="assets/logo/ArrowRight.svg" alt="">
                                 </button>
                             </a>
@@ -96,7 +96,7 @@
                         <a href="/product/{{ $travel->id }}">
                             <button type="button"
                                 class="flex py-3 pl-6 pr-4 justify-center items-center gap-2 bg-blue-600 rounded-lg">
-                                <h3 class="text-base font-sans font-semibold text-white">Book Now!</h3>
+                                <h3 class="text-base font-sans font-semibold text-white">Book</h3>
                                 <img src="assets/ArrowRight.svg" alt="">
                             </button>
                         </a>

@@ -4,8 +4,8 @@
             <h1 class="text-2xl hover:text-slate-400">ADSTravel</h1>
         </a>
         <div class="flex gap-5">
-            <a href="#" class="hover:text-slate-500">Home</a>
-            <a href="#" class="hover:text-slate-500">About</a>
+            <a href="/product" class="hover:text-slate-500">Home</a>
+            <a href="" class="hover:text-slate-500">About</a>
             <a href="/product" class="hover:text-slate-500">Pricing</a>
         </div>
         @if (auth()->check())

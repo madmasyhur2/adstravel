@@ -112,5 +112,13 @@ class TravelSeeder extends Seeder
             'price' => 4000000
         ]);
 
+        Travel::create([
+            'title' => 'Yogyakarta',
+            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum magna a metus tincidunt, eget efficitur libero commodo.',
+            'location' => 'Yogyakarta, DIY',
+            'departure_time' => '2024-02-17 08:00:00',
+            'arrival_time' => '2024-02-20 10:00:00',
+            'price' => 2500000
+        ]);
     }
 }

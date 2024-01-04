@@ -6,6 +6,8 @@ use App\Models\transaction;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoretransactionRequest;
 use App\Http\Requests\UpdatetransactionRequest;
+use Illuminate\Http\Request;
+use App\Models\Travel;
 
 class TransactionController extends Controller
 {
@@ -36,9 +38,15 @@ class TransactionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(transaction $transaction)
+    public function show(Request $request)
     {
-        //
+        $travels = Travel::where('id', $request->id)->first();
+        $travel = Travel::where('id', $request->id)->first();
+
+        return view("transaction.page", [
+            'travels' => $travels,
+            'travel' => $travel
+        ]);
     }
 
     /**

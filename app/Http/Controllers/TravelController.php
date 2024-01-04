@@ -65,9 +65,15 @@ class TravelController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(travel $travel)
+    public function show(Request $request)
     {
-        //
+        $travel = Travel::where('id', $request->id)->first();
+        $travels = Travel::all();
+
+        return view('product.detail.page', [
+            'travel' => $travel,
+            'travels' => $travels
+        ]);
     }
 
     /**
