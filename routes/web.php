@@ -21,4 +21,8 @@ Route::post('/login', [UserController::class, 'login'])->name('login');
 Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
 Route::post('/register', [UserController::class, 'register'])->name('register');
 
+Route::get('/profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
+
 Route::get('/product', [TravelController::class, 'index']);
+
+Route::put('/user/update', 'App\Http\Controllers\UserController@update')->name('user.update');

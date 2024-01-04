@@ -25,15 +25,14 @@ class UserController extends Controller
     public function profile()
     {
         $user = Auth::user();
-        $users = User::where('user_id', $user->id)->first();
-        $transaction = Transaction::where('tenant_id', $users->id)
-            ->join('vehicles', 'transactionals.vehicle_id', '=', 'vehicles.id')
-            ->select('transactionals.*', 'vehicles.name as vehicle_name')
+        $transactions = Transaction::where('user_id', $user->id)
+            ->join('travel', 'transactions.travel_id', '=', 'travel.id')
+            ->select('transactions.*', 'travel.*')
             ->get();
 
         return view('user.profile.page', [
-            'user' => Auth::user(),
-            'transaction' => $transaction ?? null,
+            'user' => $user,
+            'transactions' => $transactions
         ]);
     }
 
@@ -84,5 +83,19 @@ class UserController extends Controller
         $request->session()->regenerateToken();
         return redirect()->route('login');
     }
-}
 
+    public function update(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|max:255',
+            'phone_number' => 'required|digits_between:10,15'
+        ]);
+
+        $user = Auth::user();
+        $user->name = $request->name;
+        $user->phone_number = $request->phone_number;
+        $user->save();
+
+        return redirect()->route('profile')->with('success', 'Profile updated successfully');
+    }
+}

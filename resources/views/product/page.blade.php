@@ -6,9 +6,7 @@
     <div class="w-full h-full px-32 py-4 bg-gray-100">
         <div class="pt-7 flex flex-col gap-8">
             <div class="h-96 flex flex-col rounded-3xl bg-center bg-[url('../../../public/assets/image/product-page-bg.jpg')] justify-center items-center gap-3 text-white">
-                    <h1 class="text-6xl font-sans px-4">Lorem Ipsum</h1>
-                    <h3 class="text-base font-sans px-4 text-center">Lorem ipsum dolor sit amet consectetur. Tempor id nunc cursus euismod id
-                        egestas. Iaculis nec cursus sit proin urna lorem ac potenti morbi.</h3>
+                    <h1 class="text-6xl font-sans px-4">Explore The Beauty of Indonesia</h1>
             </div>
             <div class="flex justify-between w-full gap-4">
                 {{-- Destination Filter --}}

@@ -1,7 +1,7 @@
 <div class="w-full shadow-xl">
     <div class="flex justify-between p-6 items-center text-lg">
         <a href="/product">
-            <h1 class="text-2xl hover:text-slate-400">EASYRENT</h1>
+            <h1 class="text-2xl hover:text-slate-400">ADSTravel</h1>
         </a>
         <div class="flex gap-5">
             <a href="#" class="hover:text-slate-500">Home</a>
@@ -23,7 +23,7 @@
                     <div class="hidden dropdown-list-item absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                         role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1">
-                            <a href="/user/profile"
+                            <a href="/profile"
                                 class="hover:bg-indigo-600 hover:text-white text-gray-700 block w-full px-4 py-2 text-left text-lg"
                                 role="menuitem" tabindex="-1" id="menu-item-1">Profile</a>
                         </div>
@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div style="width: 50px; height: 50px;" class="overflow-hidden w-50 h-50 rounded-full">
-                    <img src="assets/user-1.jpg" alt="" style="width: 100%; height: 100%;"
+                    <img src="assets/image/user-1.jpg" alt="" style="width: 100%; height: 100%;"
                         class="object-cover">
                 </div>
             </div>
