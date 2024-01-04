@@ -23,9 +23,5 @@ class travel extends Model
     {
         return $this->belongsTo(User::class);
     }
-
-    public function travel_assets()
-    {
-        return $this->hasMany(travel_assets::class);
-    }
+    
 }
