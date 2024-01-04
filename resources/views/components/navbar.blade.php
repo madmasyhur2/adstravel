@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div style="width: 50px; height: 50px;" class="overflow-hidden w-50 h-50 rounded-full">
-                    <img src="/assets/hanif.jpeg" alt="" style="width: 100%; height: 100%;"
+                    <img src="assets/user-1.jpg" alt="" style="width: 100%; height: 100%;"
                         class="object-cover">
                 </div>
             </div>

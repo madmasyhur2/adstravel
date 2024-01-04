@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\TravelController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/login', [UserController::class, 'index']);
+Route::post('/login', [UserController::class, 'login'])->name('login');
+Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
+Route::post('/register', [UserController::class, 'register'])->name('register');
+
+Route::get('/product', [TravelController::class, 'index']);
