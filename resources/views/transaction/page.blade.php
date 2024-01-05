@@ -5,7 +5,7 @@
 <div class="flex justify-center" id="container">
     <div class="mr-12">
         {{-- Transaction Info --}}
-        <form action="/product/transaction" method="post">
+        <form method="post" action="/product/transaction">
             @csrf
             <div class="flex flex-col justify-center items-center" id="Transaction-info">
                 <div class="bg-white rounded shadow p-6 m-4">
@@ -24,7 +24,7 @@
                         </div>
                         <div>
                             <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Pax</label>
-                            <input type="number" name="pax" id="pax" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" placeholder="Total Pax" required>
+                            <input type="number" name="quantity" id="quantity" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6" placeholder="Total Pax" required>
                         </div>
                         <div>
                             <label for="City" class="block text-sm font-medium leading-6 text-gray-900">City</label>

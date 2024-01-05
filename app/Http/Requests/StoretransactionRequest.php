@@ -22,7 +22,13 @@ class StoretransactionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+                'user_id' => ['required', 'numeric'],
+                'travel_id' => ['required', 'numeric'],
+                'total_price' => ['required', 'numeric'],
+                'name' => 'required|string|max:255',
+                'phone_number' => 'required|string|max:15',
+                'pax' => 'required|numeric',
+                'city' => 'required|string|max:100'
         ];
     }
 }

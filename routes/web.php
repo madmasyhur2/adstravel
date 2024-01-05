@@ -16,12 +16,12 @@ use App\Http\Controllers\TransactionController;
 |
 */
 
+Route::get('/', [TravelController::class, 'index']);
 
 Route::get('/login', [UserController::class, 'index']);
 Route::post('/login', [UserController::class, 'login'])->name('login');
 Route::get('/logout', [UserController::class, 'logout'])->middleware('auth');
 Route::post('/register', [UserController::class, 'register'])->name('register');
-
 Route::get('/profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
 
 Route::put('/user/update', 'App\Http\Controllers\UserController@update')->name('user.update');

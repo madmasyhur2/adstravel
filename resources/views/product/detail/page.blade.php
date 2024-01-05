@@ -195,9 +195,9 @@
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="flex items-center self-center w-6 h-6 rounded-full bg-gray-400"></div>
-                                    <h3 class="font-sans font-medium text-xs text-black">Maulana</h3>
+                                    <h3 class="font-sans font-medium text-xs text-black">Galih</h3>
                                 </div>
-                                <h3 class="font-sans font-medium text-xs text-black">nice</h3>
+                                <h3 class="font-sans font-medium text-xs text-black">Travel yang aman dan nyaman</h3>
                                 <div class="pb-3 flex flex-row items-start justify-between w-[502px] border-b border-gray-400">
                                     <div class="flex w-36 items-center justify-between">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
@@ -230,9 +230,9 @@
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="flex items-center self-center w-6 h-6 rounded-full bg-gray-400"></div>
-                                    <h3 class="font-sans font-medium text-xs text-black">Maulana</h3>
+                                    <h3 class="font-sans font-medium text-xs text-black">Rafi</h3>
                                 </div>
-                                <h3 class="font-sans font-medium text-xs text-black">nice</h3>
+                                <h3 class="font-sans font-medium text-xs text-black">Cocok Trip Bersama Keluarga</h3>
                                 <div class="pb-3 flex flex-row items-start justify-between w-[502px] border-b border-gray-400">
                                     <div class="flex w-36 items-center justify-between">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
@@ -265,9 +265,9 @@
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="flex items-center self-center w-6 h-6 rounded-full bg-gray-400"></div>
-                                    <h3 class="font-sans font-medium text-xs text-black">Maulana</h3>
+                                    <h3 class="font-sans font-medium text-xs text-black">Muhammad</h3>
                                 </div>
-                                <h3 class="font-sans font-medium text-xs text-black">nice</h3>
+                                <h3 class="font-sans font-medium text-xs text-black">Cocok buat healing</h3>
                                 <div class="pb-3 flex flex-row items-start justify-between w-[502px] border-b border-gray-400">
                                     <div class="flex w-36 items-center justify-between">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
@@ -300,9 +300,9 @@
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="flex items-center self-center w-6 h-6 rounded-full bg-gray-400"></div>
-                                    <h3 class="font-sans font-medium text-xs text-black">Maulana</h3>
+                                    <h3 class="font-sans font-medium text-xs text-black">Bagas</h3>
                                 </div>
-                                <h3 class="font-sans font-medium text-xs text-black">nice</h3>
+                                <h3 class="font-sans font-medium text-xs text-black">Beautiful place</h3>
                                 <div class="pb-3 flex flex-row items-start justify-between w-[502px] border-b border-gray-400">
                                     <div class="flex w-36 items-center justify-between">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
@@ -335,9 +335,9 @@
                                 </div>
                                 <div class="flex items-center gap-2">
                                     <div class="flex items-center self-center w-6 h-6 rounded-full bg-gray-400"></div>
-                                    <h3 class="font-sans font-medium text-xs text-black">Maulana</h3>
+                                    <h3 class="font-sans font-medium text-xs text-black">Masyhur</h3>
                                 </div>
-                                <h3 class="font-sans font-medium text-xs text-black">nice</h3>
+                                <h3 class="font-sans font-medium text-xs text-black">Worth it!</h3>
                                 <div class="pb-3 flex flex-row items-start justify-between w-[502px] border-b border-gray-400">
                                     <div class="flex w-36 items-center justify-between">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">

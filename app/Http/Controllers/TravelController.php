@@ -36,7 +36,7 @@ class TravelController extends Controller
         if ($request->has('departure')) {
             $departureRequest = Travel::where('departure_time', $request->departure_time)->first();
         } 
-        $departures = Travel::all();
+        // $departures = Travel::all();
 
         return view('product.page', [
             'travels' => $travels,
@@ -49,10 +49,7 @@ class TravelController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
