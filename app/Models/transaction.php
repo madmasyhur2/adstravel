@@ -12,8 +12,12 @@ class transaction extends Model
     protected $fillable = [
         'user_id',
         'travel_id',
+        'name',
+        'phone_number',
         'quantity',
-        'total_price'
+        'city',
+        'total_price',
+        'payment_status'
     ];
 
     public function user()

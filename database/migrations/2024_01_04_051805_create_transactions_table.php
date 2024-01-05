@@ -15,8 +15,14 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('travel_id');
-            $table->integer('quantity');
+            $table->string('name');
+            $table->string('phone_number');
+            $table->integer('quantity'); 
+            $table->string('city');
             $table->integer('total_price');
+            $table->enum('payment_status', ['SUCCESS','PROCESS', 'FAILURE'])->default('PROCESS');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('travel_id')->references('id')->on('travel');
             $table->timestamps();
         });
     }
