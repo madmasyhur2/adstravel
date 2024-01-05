@@ -55,7 +55,7 @@ class TravelSeeder extends Seeder
             'location' => 'Lombok, NTB',
             'departure_time' => '2024-01-17 08:00:00',
             'arrival_time' => '2024-01-20 10:00:00',
-            'price' => 3000000
+            'price' => 3500000
         ]);
 
         Travel::create([
@@ -64,7 +64,7 @@ class TravelSeeder extends Seeder
             'location' => 'Manggarai, NTT',
             'departure_time' => '2024-01-21 08:00:00',
             'arrival_time' => '2024-01-24 10:00:00',
-            'price' => 3500000
+            'price' => 4000000
         ]);
 
         Travel::create([
@@ -73,7 +73,7 @@ class TravelSeeder extends Seeder
             'location' => 'Sumba, NTT',
             'departure_time' => '2024-01-25 08:00:00',
             'arrival_time' => '2024-01-28 10:00:00',
-            'price' => 5000000
+            'price' => 4500000
         ]);
 
         Travel::create([
@@ -100,7 +100,7 @@ class TravelSeeder extends Seeder
             'location' => 'Banda, Maluku',
             'departure_time' => '2024-02-07 08:00:00',
             'arrival_time' => '2024-02-11 10:00:00',
-            'price' => 9000000
+            'price' => 8500000
         ]);
 
         Travel::create([
@@ -109,7 +109,7 @@ class TravelSeeder extends Seeder
             'location' => 'Klungkung, Bali',
             'departure_time' => '2024-02-12 08:00:00',
             'arrival_time' => '2024-02-16 10:00:00',
-            'price' => 4000000
+            'price' => 5000000
         ]);
 
         Travel::create([

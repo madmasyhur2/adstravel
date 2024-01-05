@@ -58,7 +58,7 @@
                                     <td>{{ date('j F Y', strtotime($tr->departure_time)) }}</td>
                                     <td>{{ date('j F Y', strtotime($tr->arrival_time)) }}</td>
                                     <td>{{$tr->quantity}}</td>
-                                    <td>Rp. {{ number_format($tr->totalPrice, 0, ',', '.') }}</td>
+                                    <td>Rp. {{ number_format($tr->total_price, 0, ',', '.') }}</td>
                                     <td>
                                         @if($tr->payment_status == "PROCESS")
                                             <p class="py-1 px-3 bg-yellow-300 text-yellow-700 rounded-full w-fit mx-auto">Process</p>

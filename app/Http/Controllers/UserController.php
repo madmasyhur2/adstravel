@@ -39,6 +39,8 @@ class UserController extends Controller
             $transaction->totalPrice = $subtotal/2;
         }
 
+        // dd($transaction);
+
         return view('user.profile.page', [
             'user' => $user,
             'transactions' => $transactions,
@@ -60,7 +62,7 @@ class UserController extends Controller
         $validated = $request->only(['name', 'email', 'phone_number', 'password']);
         $validated['password'] = Hash::make($validated['password']);
     
-        $user = User::create($validated);
+        $user = User::create(array_diff_key($validated, ['travel_id' => '']));
     
         Auth::login($user);
     
