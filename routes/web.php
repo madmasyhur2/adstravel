@@ -26,6 +26,8 @@ Route::get('/profile', [UserController::class, 'profile'])->middleware('auth')->
 
 Route::put('/user/update', 'App\Http\Controllers\UserController@update')->name('user.update');
 
+Route::put('/profile', 'App\Http\Controllers\TransactionController@profile')->name('profile');
+
 Route::prefix('product')->group(function () {
     Route::get('/', [TravelController::class, 'index'])->name('product');
     Route::get('/{id}', [TravelController::class, 'show']);

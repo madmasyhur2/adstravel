@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Models\Travel;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Auth;
 
 
 
@@ -101,6 +102,28 @@ class TransactionController extends Controller
         return view('invoice.page', compact('transaction', 'travel', 'result'));
     }
 
+    public function profile() 
+    {
+        $user = Auth::user();
+
+        $transactions = Transaction::where('user_id', $user->id)
+            ->join('travel', 'transactions.travel_id', '=', 'travel.id')
+            ->select('transactions.*', 'travel.*')
+            ->get();
+        
+
+        foreach ($transactions as $transaction) {
+            $quantity = $transaction->quantity;
+            $totalPayment = $transaction->total_price;
+            $subtotal = $totalPayment * $quantity;
+            $transaction->totalPrice = $subtotal/2;
+        }
+
+        return view('user.profile.page', [
+            'user' => $user,
+            'transactions' => $transactions,
+        ])->with('success', 'Travel bookes successfully');
+    }
     /**
      * Show the form for editing the specified resource.
      */

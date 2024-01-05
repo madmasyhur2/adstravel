@@ -1,4 +1,3 @@
-
 @extends("invoice.layout.main")
 
 @section("content")
@@ -109,11 +108,10 @@
                             <p class="text-sm font-bold text-right">Rp {{ number_format($transaction->total_price, 0, ',', '.') }}</p>
                         </div>
                     </div>
-                    <a>
-                        <button type="button" id="pay-button"
-                            class="flex py-3 pl-6 pr-4 justify-center items-center gap-2 bg-blue-600 rounded-lg w-full">
+                    <a href="/profile">
+                        <button type="submit" class="flex py-3 pl-6 pr-4 justify-center items-center gap-2 bg-blue-600 rounded-lg w-full">
                             <h3 class="text-base font-sans font-semibold text-white">Pay Now</h3>
-                            <img src="assets/ArrowRight.svg" alt="">
+                            <img src="assets/logo/ArrowRight.svg" alt="">
                         </button>
                     </a>
                 </div>
@@ -121,32 +119,5 @@
         </div>
     </div>
 </div>
-
-{{-- <script type="text/javascript">
-        // For example trigger on button clicked, or any time you need
-        let payButton = document.getElementById('pay-button');
-        payButton.addEventListener('click', function () {
-          // Trigger snap popup. @TODO: Replace TRANSACTION_TOKEN_HERE with your transaction token.
-          // Also, use the embedId that you defined in the div above, here.
-        window.snap.pay('{{ $snapToken }}', {
-        onSuccess: function(result){
-          /* You may add your own implementation here */
-        alert("payment success!"); console.log(result);
-        },
-        onPending: function(result){
-          /* You may add your own implementation here */
-        alert("wating your payment!"); console.log(result);
-        },
-        onError: function(result){
-          /* You may add your own implementation here */
-        alert("payment failed!"); console.log(result);
-        },
-        onClose: function(){
-          /* You may add your own implementation here */
-        alert('you closed the popup without finishing the payment');
-        }
-        });
-        });
-</script> --}}
 
 @endsection

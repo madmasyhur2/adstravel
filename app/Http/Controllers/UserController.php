@@ -25,14 +25,23 @@ class UserController extends Controller
     public function profile()
     {
         $user = Auth::user();
+
         $transactions = Transaction::where('user_id', $user->id)
             ->join('travel', 'transactions.travel_id', '=', 'travel.id')
             ->select('transactions.*', 'travel.*')
             ->get();
+        
+
+        foreach ($transactions as $transaction) {
+            $quantity = $transaction->quantity;
+            $totalPayment = $transaction->total_price;
+            $subtotal = $totalPayment * $quantity;
+            $transaction->totalPrice = $subtotal/2;
+        }
 
         return view('user.profile.page', [
             'user' => $user,
-            'transactions' => $transactions
+            'transactions' => $transactions,
         ]);
     }
 

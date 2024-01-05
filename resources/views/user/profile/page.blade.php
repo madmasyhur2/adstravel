@@ -1,4 +1,5 @@
 @extends('user.layout.main', ['page' => 'User Profile'])
+
 @if (session('success'))
     @include('success-message')
 @endif
@@ -43,7 +44,7 @@
                                 <th>Departure</th>
                                 <th>Arrival</th>
                                 <th>Pax</th>
-                                <th>Payment</th>
+                                <th>Total Payment</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
@@ -56,11 +57,11 @@
                                     <td>{{$tr -> title}}</td>
                                     <td>{{ date('j F Y', strtotime($tr->departure_time)) }}</td>
                                     <td>{{ date('j F Y', strtotime($tr->arrival_time)) }}</td>
-                                    <td>{{$tr -> quantity}}</td>
-                                    <td>Rp. {{ number_format($tr->price, 0, ',', '.') }}</td>
+                                    <td>{{$tr->quantity}}</td>
+                                    <td>Rp. {{ number_format($tr->totalPrice, 0, ',', '.') }}</td>
                                     <td>
                                         @if($tr->payment_status == "PROCESS")
-                                            <p class="py-1 px-3 bg-yellow-300 text-yellow-700 rounded-full w-fit mx-auto">Booked</p>
+                                            <p class="py-1 px-3 bg-yellow-300 text-yellow-700 rounded-full w-fit mx-auto">Process</p>
                                         @elseif($tr->payment_status == "SUCCESS")
                                             <p class="py-1 px-3 bg-green-300 text-green-700 rounded-full w-fit mx-auto">Completed</p>
                                         @else
@@ -102,4 +103,5 @@
         </div>
     </div>
 </div>
+
 @endsection
